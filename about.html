@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700' rel='stylesheet' type='text/css'>
+  <link href="font-awesome.min.css" rel="stylesheet">
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <link href="bootstrap-datetimepicker.min.css" rel="stylesheet">  
+  <link href="flexslider.css" rel="stylesheet">
+  <link href="templatemo-style.css" rel="stylesheet">
+  </head>
+  <body class="tm-gray-bg">
+  	<div class="tm-header">
+  		<div class="container">
+  			<div class="row">
+  				<div class="col-lg-6 col-md-4 col-sm-3 tm-site-name-container">
+  					<a href="#" class="tm-site-name">Travelling INDIA</a>	
+  				</div>
+	  			<div class="col-lg-6 col-md-8 col-sm-9">
+	  				<div class="mobile-menu-icon">
+		              <i class="fa fa-bars"></i>
+		            </div>
+	  				<nav class="tm-nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html" class="active">About</a></li>
+							<li><a href="tours.html">Our Tours</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>		
+	  			</div>				
+  			</div>
+  		</div>	  	
+  	</div>
+	<section class="tm-white-bg section-padding-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="tm-section-header section-margin-top">
+					<div class="col-lg-4 col-md-3 col-sm-3"><hr></div>
+					<div class="col-lg-4 col-md-6 col-sm-6"><h2 class="tm-section-title">What we do</h2></div>
+					<div class="col-lg-4 col-md-3 col-sm-3"><hr></div>	
+				</div>				
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="tm-what-we-do-right">
+						<div class="tm-about-box-2 margin-bottom-30">
+							<img src="about-2.jpg" alt="image" class="tm-about-box-2-img">
+							<div class="tm-about-box-2-text">
+								<h3 class="tm-about-box-2-title">Objective</h3>
+				                <p class="tm-about-box-2-description gray-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quasi vitae cupiditate asperiores eligendi beatae minima iste est qui?</p>
+				                <p class="tm-about-box-2-footer"> Prajapati Travelling Group</p>	
+							</div>		                
+						</div>
+						<div class="tm-about-box-2">
+							<img src="about-3.jpg" alt="image" class="tm-about-box-2-img">
+							<div class="tm-about-box-2-text">
+								<h3 class="tm-about-box-2-title">What we Achive</h3>
+				                <p class="tm-about-box-2-description gray-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, distinctio. Temporibus rerum accusamus, inventore reiciendis alias veritatis autem distinctio!</p>
+				                <p class="tm-about-box-2-footer"> Prajapati Travelling Group</p>	
+							</div>		                
+						</div>
+					</div>
+					<div class="tm-testimonials-box">
+						<h3 class="tm-testimonials-title">Testimonials</h3>
+						<div class="tm-testimonials-content">
+							<div class="tm-testimonial">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, veritatis.</p>
+		                		<strong class="text-uppercase">Naveen Prajapati</strong>	
+							</div>
+							<div class="tm-testimonial">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, dolores?</p>
+			                	<strong class="text-uppercase">Vishal Prajapati</strong>		
+							</div>
+	       					<div class="tm-testimonial">
+	       						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, temporibus.<p>
+	                			<strong class="text-uppercase">Shvam Prajapati</strong>
+	       					</div>                	
+						</div>
+					</div>	
+				</div>							
+			</div>			
+		</div>
+	</section>
+	<footer class="tm-black-bg">
+		<div class="container">
+			<div class="row">
+				<p class="tm-copyright-text">Copyright &copy; 2020 @Copyright Prajapati Travelling Limited</p>
+			</div>
+		</div>		
+	</footer>
+	<script type="text/javascript" src="jquery-1.11.2.min.js"></script>      		
+  	<script type="text/javascript" src="bootstrap.min.js"></script>					
+  	<script type="text/javascript" src="jquery.flexslider-min.js"></script>			
+  	<script type="text/javascript" src="templatemo-script.js"></script>      		
+	<script>
+		$(function() {
+
+		  	$('a[href*=#]:not([href=#])').click(function() {
+			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			      var target = $(this.hash);
+			      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			      if (target.length) {
+			        $('html,body').animate({
+			          scrollTop: target.offset().top
+			        }, 1000);
+			        return false;
+			      }
+			    }
+		  	});		  	
+		});
+		$(window).load(function(){
+		  	$('.flexslider.flexslider-banner').flexslider({
+			    controlNav: false
+		    });
+		  	$('.flexslider').flexslider({
+		    	animation: "slide",
+		    	directionNav: false,
+		    	slideshow: false
+		  	});
+		});
+	</script>
+ </body>
+ </html>

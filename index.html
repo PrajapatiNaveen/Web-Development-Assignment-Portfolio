@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700' rel='stylesheet' type='text/css'>
+  <link href="font-awesome.min.css" rel="stylesheet">
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <link href="bootstrap-datetimepicker.min.css" rel="stylesheet">  
+  <link href="flexslider.css" rel="stylesheet">
+  <link href="templatemo-style.css" rel="stylesheet">
+
+
+  </head>
+  <body class="tm-gray-bg">
+  	<div class="tm-header">
+  		<div class="container">
+  			<div class="row">
+  				<div class="col-lg-6 col-md-4 col-sm-3 tm-site-name-container">
+  					<a href="#" class="tm-site-name">Travelling INDIA </a>	
+  				</div>
+	  			<div class="col-lg-6 col-md-8 col-sm-9">
+	  				<div class="mobile-menu-icon">
+		              <i class="fa fa-bars"></i>
+		            </div>
+	  				<nav class="tm-nav">
+						<ul>
+							<li><a href="index.html" class="active">Home</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="tours.html">Our Tours</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>		
+	  			</div>				
+  			</div>
+  		</div>	  	
+  	</div>
+	
+	<section class="tm-banner">
+		<div class="flexslider flexslider-banner">
+		  <ul class="slides">
+		    <li>
+			    <div class="tm-banner-inner">
+					<h1 class="tm-banner-title">Welcome <span class="tm-yellow-text">To Indian</span> Tourist Services</h1>
+				</div>
+				<img src="banner-1.jpg" alt="Image" />	
+		    </li>
+		  </ul>
+		</div>	
+	</section>
+
+	<section class="tm-white-bg section-padding-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="tm-section-header section-margin-top">
+					<div class="col-lg-4 col-md-3 col-sm-3"><hr></div>
+					<div class="col-lg-4 col-md-6 col-sm-6"><h2 class="tm-section-title">India Best places</h2></div>
+					<div class="col-lg-4 col-md-3 col-sm-3"><hr></div>	
+				</div>
+				<div class="col-lg-6">
+					<div class="tm-home-box-3">
+						<div class="tm-home-box-3-img-container">
+							<img src="index-07.jpg" alt="image" class="img-responsive">	
+						</div>						
+						<div class="tm-home-box-3-info">
+							<p class="tm-home-box-3-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, ullam totam fugiat blanditiis accusamus iusto nostrum.</p>
+						</div>						
+					</div>					
+			     </div>
+			     <div class="col-lg-6">
+			        <div class="tm-home-box-3">
+						<div class="tm-home-box-3-img-container">
+							<img src="index-08.jpg" alt="image" class="img-responsive">	
+						</div>						
+						<div class="tm-home-box-3-info">
+							<p class="tm-home-box-3-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, ad dolorem tempore optio reiciendis nulla?</p>
+						</div>						
+					</div>
+				</div>
+				<div class="col-lg-6">
+				    <div class="tm-home-box-3">
+						<div class="tm-home-box-3-img-container">
+							<img src="index-09.jpg" alt="image" class="img-responsive">	
+						</div>						
+						<div class="tm-home-box-3-info">
+							<p class="tm-home-box-3-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia aliquid nobis sint dolorem soluta quaerat!</p>
+						</div>						
+					</div>
+			    </div>
+			    <div class="col-lg-6">
+			        <div class="tm-home-box-3">
+						<div class="tm-home-box-3-img-container">
+							<img src="index-10.jpg" alt="image" class="img-responsive">	
+						</div>						
+						<div class="tm-home-box-3-info">
+							<p class="tm-home-box-3-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis fugit quia molestias earum quam, culpa est!</p>
+						</div>
+						</div>						
+					</div>
+			   	</div>
+			</div>		
+		</div>
+	</section>
+	<footer class="tm-black-bg">
+		<div class="container">
+			<div class="row">
+				<p class="tm-copyright-text">Copyright &copy; 2020 @Copyright Prajapati Travelling Limited</p>
+			</div>
+		</div>		
+	</footer>
+	<script type="text/javascript" src="jquery-1.11.2.min.js"></script>      		
+  	<script type="text/javascript" src="moment.js"></script>							
+	<script type="text/javascript" src="bootstrap.min.js"></script>					
+	<script type="text/javascript" src="bootstrap-datetimepicker.min.js"></script>	
+	<script type="text/javascript" src="jquery.flexslider-min.js"></script>
+
+   	<script type="text/javascript" src="templatemo-script.js"></script>      		
+	<script>
+		
+		$(function() {
+
+			$('#hotelCarTabs a').click(function (e) {
+			  e.preventDefault()
+			  $(this).tab('show')
+			})
+
+        	$('.date').datetimepicker({
+            	format: 'MM/DD/YYYY'
+            });
+            $('.date-time').datetimepicker();
+
+			
+		  	$('a[href*=#]:not([href=#])').click(function() {
+			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			      var target = $(this.hash);
+			      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			      if (target.length) {
+			        $('html,body').animate({
+			          scrollTop: target.offset().top
+			        }, 1000);
+			        return false;
+			      }
+			    }
+		  	});
+		});
+		
+	
+		$(window).load(function() {	  		
+		    $('.flexslider').flexslider({
+			    controlNav: false
+		    });
+	  	});
+	</script>
+ </body>
+ </html>
